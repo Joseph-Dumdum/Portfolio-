@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Joseph M. Dumdum</title>
+    <link rel="stylesheet" href="projects/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="all-container">
+
+      <header class="header-panel">
+        <div class="header-menus">
+            <div class="home">
+                <button id="homebtnID" class="button-home clicked">Home</button>
+            </div>
+            <div class="menus">
+              <button id="aboutbtnID" class="about-button clicked">About</button>
+              <button id="servicesbtnID" class="services-button clicked">Experiences</button>
+              <button id="contactbtnID" class="contact-button clicked">Contact</button>
+              <button id="helpbtnID" class="help-button clicked">Help</button>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars fa-2x hamburger" id="toggleButton" onclick="toggleMenu()"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="navigation-menu-mobile">
+      <div class="nav-buttons">
+          <button class="mobile-about-button clicked"><u>About</u></button>
+          <button class="mobile-services-button clicked"><u>Skills</u></button>
+          <button class="mobile-contact-button clicked"><u>Contact</u></button>
+          <button class="mobile-help-button clicked"><u>Help</u></button>
+      </div>
+  </div>
+      
+     <!--Home Part-->
+      <div class="home-below-container">
+        <h id="homeID" class="nav-home">home</h>
+        <div class="home-panel">
+
+          <div class="introduction-panel">
+            <h1 class="intro-title hopIn">
+              <small class="class-hi">Hello there</small>,<br>
+              <int>I'm <u>Joseph M. Dumdum</u></int>.<br>
+              <int>A College Student</int>.
+            </h1>
+          </div>
+
+          <img class="profile-pic hopIn" src="projects/assets/images/prof.jpg" type="image">
+        </div>
+      </div>
+
+      <!--About Part-->
+      <div class="about-below-container">
+        <h id="aboutID" class="nav-about">about</h>
+        <div class="about-panel">
+
+          <img class="about-picture" src="projects/assets/images/abt.png">
+         
+         <div class="about-info-panel">
+           <h class="about-title menu-titles"><bold>About me</bold></h>
+           <p class="about-info">
+            I’m a computer engineer passionate about software 
+            development and programming, specializing in electronics 
+            design and circuit testing. My focus is on designing and 
+            enhancing computer systems, crafting software solutions, 
+            and delivering exceptional results for my clients. I 
+            tackle every challenge with a humble mindset, always 
+            striving to learn and grow. During my free time, I dive 
+            into exploring new technologies and working on personal 
+            projects to keep up with the fast-paced tech industry.
+           </p>
+           
+         </div>
+        </div>        
+      </div>   
+      
+      <!--Services Part-->
+      <div class="services-below-container">
+        <h id="servicesID" class="nav-services">services</h>
+        <div class="services-panel">
+          <div class="services">
+            <h1 class="services-title menu-titles">My Experiences</h1>
+            <p class="services-info">
+            -I have extensive experience in graphics design and motor 
+            optimization, constantly pushing the limits of what can be 
+            achieved in both areas. My background includes optimizing 
+            performance, enhancing capabilities, and creating visually 
+            stunning designs while maximizing motor efficiency. I’ve 
+            honed my skills by developing innovative designs and 
+            fine-tuning motor systems, striving to achieve the best 
+            possible outcomes. Through these experiences, I’ve gained 
+            a unique blend of creativity and technical expertise, 
+            allowing me to tackle complex challenges and deliver 
+            exceptional results in both fields.
+            </p>
+          </div>
+          
+          <div class="myservices-panel">
+            <div class="service-electronics">
+              <h class="df-title services-titles">
+              Electronic Design And Test Circuits
+              </h>
+              <p class="definition services-info-by-title">
+              -I’ve gained valuable experience in electronics design 
+              and circuit testing, focusing on creating efficient, 
+              reliable systems. From designing innovative solutions 
+              to optimizing circuit performance, I’ve worked on projects 
+              that prioritize precision and functionality, ensuring 
+              exceptional results.</p>
+              <div class="circle-buttons-panel">
+                <button class="circle-btn-maxim"></button>
+                <button class="circle-btn-graphic"></button>
+                <button class="circle-btn-hardware"></button>
+              </div>
+            </div>
+            
+            <div class="service-software">
+              <h class="services-titles">
+                Graphic Designing
+              </h>
+              <p class="services-info-by-title">
+                -I create logos and digital animations using Photoshop 
+                and animation tools, bringing your brand’s vision to life. 
+                With a focus on impactful visuals, I help your brand stand 
+                out and connect with its audience.
+              </p>
+            </div>
+            
+            <div class="service-programming">
+              <h class="services-titles">
+                Hardware Troubleshooting
+              </h>s
+              <p class="services-info-by-title">
+                -I have extensive experience in hardware troubleshooting, 
+                ensuring systems run smoothly and efficiently. From resolving 
+                performance issues to providing custom solutions, I’m here 
+                to tackle your hardware challenges effectively.
+              </p>
+            </div>
+          </div>
+          
+        </div>        
+      </div>
+      
+      <div class="contact-below-container">
+        <h id="contactID" class="nav-contact">contact</h>
+        <div class="contact-panel">
+          <div class="contact-ttle-panel">
+            <h class="contact-title menu-titles">Contact Me</h>
+          </div>
+          
+          <div class="contact-info-panel">
+
+            <div class="textfields-panel">
+              <input class="textfields" type="text" id="name" name="name" placeholder="Enter your name">
+              <input class="textfields" type="text" id="email" name="name" placeholder="Enter your email">
+              <div class="details-panel">
+                <input class="details-field small-field" type="time" id="time" name="time" placeholder="Time">
+                <input class="details-field small-field" type="date" id="date" name="date" placeholder="Date">
+              </div>
+              <textarea class="textarea tarea-size" type="text" id="message" name="name" placeholder="Enter your message"></textarea>
+            </div>
+          </div>
+        </div>        
+      </div>
+
+      <div class="help-below-container">
+        <h id="helpID" class="nav-help"></h>
+        <div class="help-panel">
+          <div class="help-ttle-panel">
+            <h class="help-title menu-titles">
+              Help
+            </h>
+          </div>
+
+          <div class="help-info-panel">
+            <div class="help-info-panel">
+              <p class="help-infos">
+                <strong>Home Part:</strong><br>
+                To go to the home part, click the "Home" button in the header or use the "Home" button in the mobile navigation menu. This part includes an introduction and your profile picture.
+            </p>
+            <p class="help-infos">
+                <strong>About Part:</strong><br>
+                Click on the "About" button in the header or the "About" button in the mobile navigation menu to access the about part. This part provides details about your background, skills, and passion for technology.
+            </p>
+            <p class="help-infos">
+                <strong>Experience Part:</strong><br>
+                To reach the services part, click the "Services" button in the header or the "Skills" button in the mobile navigation menu. Here, you can learn about the services you offer, including graphic design, motor optimization, and hardware troubleshooting.
+            </p>
+            <p class="help-infos">
+                <strong>Contact Part:</strong><br>
+                To go to the contact part, click the "Contact" button in the header or the "Contact" button in the mobile navigation menu. This part includes a form where you can enter your name, email, message, and other details to reach out to you.
+            </p>
+            <p class="help-infos">
+                <strong>Help Part:</strong><br>
+                Click on the "Help" button in the header or the "Help" button in the mobile navigation menu to access the help part. This part provides additional information or support if needed.
+            </p>
+            <p class="help-infos">
+                <strong>Navigation Menu:</strong><br>
+                You can also use the hamburger icon in the header to open or close the mobile navigation menu, providing quick access to different parts of the website.
+            </p>
+            
+          </div>
+          
+          </div>
+        </div> 
+      </div>
+      
+    </div>
+    <script src="projects/assets/js/script.js"></script>
+</body>
+</html>
